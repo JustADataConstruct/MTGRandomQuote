@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "MTGRandomQuote"
+version = "0.1.0"
+description = "Tiny python script that prints a random Magic: The Gathering's flavor text when executed. Call it on your terminal profile to get random quotes every time you open the terminal."
+authors = ["JustADataConstruct"]
+packages = [
+	{include = "MTGRandomQuote",from="src"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+colorama = "^0.4.4"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1" #Linter
+
+[tool.poetry.scripts]
+mtgquote='MTGRandomQuote.main:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+[tool.pytest.ini_options]
+addopts = "-vv --no-header"
