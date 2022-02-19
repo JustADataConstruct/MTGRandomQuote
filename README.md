@@ -1,7 +1,10 @@
 # MTGRandomQuote
 
-Tiny python script that prints a random Magic: The Gathering's flavor text when executed.
+![Sample image](mtg.png)
+
+Tiny python script that prints a random Magic: The Gathering's card's flavor text when executed.
 Call it on your terminal profile to get random quotes every time you open the terminal.
+
 
 # Install
 `pip install .`
